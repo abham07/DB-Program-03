@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="4e9ed7c3-ad0a-4b5f-bf89-90694d3bd79d" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>Version 1.0.0.0 was released on March 19, 2015.
+			</para>
+		</introduction>
+
+		<section>
+			<title>Changes in This Release</title>
+			<content>
+
+				<list class="bullet">
+					<listItem>
+						<para>Finalized data access code in C# along with related unit tests for execution.</para>
+					</listItem>
+
+				</list>
+
+			</content>
+		</section>
+
+		<relatedTopics>
+			<link xlink:href="ee7bc919-f63c-47d7-91bf-bc2fb96d2c0b" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>

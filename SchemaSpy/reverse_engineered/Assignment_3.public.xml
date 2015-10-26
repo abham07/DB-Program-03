@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="Assignment_3" schema="public" type="PostgreSQL - 9.4.0">
+   <tables>
+      <table name="randdata" numRows="100001" remarks="A table of random data." schema="public" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="user_id" nullable="false" remarks="User IDs within random data." size="10" type="int4">
+            <child column="user_id" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" table="randdata_indexed"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="url" nullable="false" remarks="URLs related to each user ID." size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="2" name="language" nullable="false" remarks="Languages related to each user ID" size="2147483647" type="text"/>
+         <primaryKey column="user_id" sequenceNumberInPK="1"/>
+         <index name="randdata_pkey" unique="true">
+            <column ascending="true" name="user_id"/>
+         </index>
+      </table>
+      <table name="randdata_indexed" numRows="100001" remarks="" schema="public" type="TABLE">
+         <column autoUpdated="false" digits="0" id="0" name="user_id" nullable="false" remarks="" size="10" type="int4">
+            <parent column="user_id" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" table="randdata"/>
+         </column>
+         <column autoUpdated="false" digits="0" id="1" name="url" nullable="false" remarks="" size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="0" id="2" name="language" nullable="false" remarks="" size="2147483647" type="text"/>
+         <primaryKey column="user_id" sequenceNumberInPK="1"/>
+         <index name="randdata_indexed_pkey" unique="true">
+            <column ascending="true" name="user_id"/>
+         </index>
+         <index name="index" unique="false">
+            <column ascending="true" name="url"/>
+            <column ascending="true" name="language"/>
+         </index>
+      </table>
+   </tables>
+</database>

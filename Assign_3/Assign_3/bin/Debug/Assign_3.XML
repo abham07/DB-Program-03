@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assign_3</name>
+    </assembly>
+    <members>
+        <member name="T:Assign_3.QueryClass">
+            <summary>
+            A class library consisting of various functions which execute SQL queries and return certain values
+            </summary>
+        </member>
+        <member name="M:Assign_3.QueryClass.CountRows">
+            <summary>
+            A function which establishes a connection to the database and executes SELECT query
+            on the default 'randData' table
+            </summary>
+            <returns>Returns result from executed SQL query</returns>
+        </member>
+        <member name="M:Assign_3.QueryClass.CountRows_Indexed">
+            <summary>
+            A function which establishes a connection to the database and executes SELECT query
+            on the indexed 'randData_Indexed' table
+            </summary>
+            <returns>Returns result from executed SQL query</returns>
+        </member>
+        <member name="M:Assign_3.QueryClass.CountSelectRows">
+            <summary>
+            A function which establishes a connection to the database and executes SELECT-WHERE query
+            on the default 'randData' table
+            </summary>
+            <returns>Returns result from executed SQL query</returns>
+        </member>
+        <member name="M:Assign_3.QueryClass.CountSelectRows_Indexed">
+            <summary>
+            A function which establishes a connection to the database and executes SELECT-WHERE query
+            on the indexed 'randData_Indexed' table
+            </summary>
+            <returns>Returns result from executed SQL query</returns>
+        </member>
+        <member name="M:Assign_3.QueryClass.QueryPlan">
+            <summary>
+            Query Plan for Normal table
+            </summary>
+            <returns>Return Query Plan for Normal</returns>
+        </member>
+        <member name="M:Assign_3.QueryClass.QueryPlan_Indexed">
+            <summary>
+            Indexed Query Plan
+            </summary>
+            <returns>Return Query Plan for Indexed</returns>
+        </member>
+    </members>
+</doc>
